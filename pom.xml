@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>OfekRv</groupId>
-    <artifactId>Tests sample project</artifactId>
+    <artifactId>Tests-sample-project</artifactId>
     <version>1.0</version>
 
     <dependencies>
