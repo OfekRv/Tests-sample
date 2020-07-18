@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
@@ -24,6 +23,6 @@ public class Highscore {
     private String username;
     @Column(nullable = false, unique = false)
     private Integer score;
-    @Column(nullable = true, unique = false)
+    @Column(nullable = false, unique = false)
     private LocalDateTime timestamp;
 }
