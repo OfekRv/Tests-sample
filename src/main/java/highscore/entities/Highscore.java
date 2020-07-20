@@ -25,4 +25,9 @@ public class Highscore {
     private Integer score;
     @Column(nullable = false, unique = false)
     private LocalDateTime timestamp;
+
+    public Highscore(String username, Integer score) {
+        this.username = username;
+        this.score = score;
+    }
 }

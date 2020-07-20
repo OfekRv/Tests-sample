@@ -58,6 +58,6 @@ public class HighscoreBl {
     }
 
     private boolean isMaxScore(Highscore score) {
-        return score.getScore() == findMaxScore().get().getScore();
+        return repository.count() == 0 || score.getScore() == findMaxScore().get().getScore();
     }
 }

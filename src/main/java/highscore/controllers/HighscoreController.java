@@ -2,12 +2,15 @@ package highscore.controllers;
 
 import highscore.bl.HighscoreBl;
 import highscore.entities.Highscore;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.inject.Inject;
+
+@AllArgsConstructor
 
 @RestController
 @RequestMapping("api/highscores/actions")
